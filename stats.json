@@ -1,0 +1,24 @@
+{
+  "scans": [
+    {
+      "timestamp": "2026-05-06T17:50:25.704Z",
+      "device": "Desktop",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Sa"
+    },
+    {
+      "timestamp": "2026-05-06T17:50:57.249Z",
+      "device": "Desktop",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Sa"
+    },
+    {
+      "timestamp": "2026-05-06T17:57:43.253Z",
+      "device": "Desktop",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Sa"
+    },
+    {
+      "timestamp": "2026-05-06T18:14:40.192Z",
+      "device": "Desktop",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Sa"
+    }
+  ]
+}

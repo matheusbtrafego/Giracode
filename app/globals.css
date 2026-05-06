@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --background: #ffffff;
+  --foreground: #333333;
+  --primary: #3d5afe; /* Blue from reference */
+  --primary-light: #e8eaf6;
+  --secondary: #fbc02d; /* Yellow from giraffe */
+  --secondary-light: #fff9c4;
+  --card-bg: #ffffff;
+  --sidebar-bg: #ffffff;
+  --sidebar-border: #f0f0f0;
+  --card-border: #f0f0f0;
+  --text-muted: #9e9e9e;
+  --radius: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Outfit', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Sidebar Layout */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 280px;
+  background: var(--sidebar-bg);
+  border-right: 1px solid var(--sidebar-border);
+  padding: 2.5rem 1.5rem;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 3rem;
+  background: #ffffff;
+}
+
+.sidebar-logo {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 3.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1rem 1.2rem;
+  color: #666;
+  text-decoration: none;
+  border-radius: var(--radius);
+  transition: all 0.2s ease;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  background: #f8f9fa;
+  color: var(--primary);
+}
+
+.nav-link.active {
+  background: var(--primary-light);
+  color: var(--primary);
+}
+
+/* Cards & Stats - Modular style from reference */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  color: var(--primary);
+}
+
+.stat-label {
+  color: #777;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* Buttons */
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 1rem 1.8rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 12px rgba(61, 90, 254, 0.2);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(61, 90, 254, 0.3);
+}
+
+.btn-secondary {
+  background: var(--secondary);
+  color: #333;
+  border: none;
+  padding: 1rem 1.8rem;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+/* Form inputs */
+input, select {
+  padding: 0.9rem 1.2rem;
+  border: 2px solid #f0f0f0;
+  border-radius: 12px;
+  width: 100%;
+  margin-top: 0.6rem;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.filters-bar {
+  display: flex;
+  gap: 1.2rem;
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  margin-bottom: 2.5rem;
+  align-items: center;
+}
+
+/* Print Styles */
+@media print {
+  .no-print { display: none !important; }
+  .card.printable { border: none !important; box-shadow: none !important; }
+}
