@@ -31,7 +31,7 @@ export default function Home() {
         <p style={{ color: 'var(--text-muted)' }}>Gerencie seus códigos e prepare-os para impressão</p>
       </header>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 350px', gap: '2rem', alignItems: 'start' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', alignItems: 'start' }}>
         
         <div className="card printable" style={{ textAlign: 'center', padding: '3rem', position: 'relative' }}>
           <img src="/logo.png" alt="Mascote Gira" style={{ width: '60px', position: 'absolute', top: '-30px', left: '50%', transform: 'translateX(-50%)', border: '4px solid #fff', borderRadius: '50%' }} className="no-print" />

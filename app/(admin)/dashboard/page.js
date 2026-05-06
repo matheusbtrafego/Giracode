@@ -90,7 +90,7 @@ export default function DashboardPage() {
       </div>
 
       {/* Gráficos de Dispositivo e SO */}
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem', marginBottom: '2rem' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem', marginBottom: '2rem' }}>
         <div className="card">
           <h3 style={{ fontSize: '1.1rem', marginBottom: '1.5rem' }}>Dispositivas</h3>
           <div className="chart-container">
