@@ -81,8 +81,8 @@ export default function SettingsPage() {
       <div className="card" style={{ marginTop: '2rem' }}>
         <h3 style={{ marginBottom: '1rem' }}>Atalhos Rápidos</h3>
         <div style={{ display: 'flex', gap: '1rem' }}>
-          <button className="badge" onClick={() => setUrl('/form')} style={{ cursor: 'pointer', border: '1px solid #ddd' }}>Formulário Interno</button>
-          <button className="badge" onClick={() => setUrl('https://wa.me/5511999999999')} style={{ cursor: 'pointer', border: '1px solid #ddd' }}>WhatsApp</button>
+          <button className="badge" onClick={() => setUrl('/form')} style={{ cursor: 'pointer', border: '1px solid var(--primary)', background: 'var(--primary-light)', color: 'var(--primary)' }}>Formulário Inteligente Gira</button>
+          <button className="badge" onClick={() => setUrl('https://wa.me/')} style={{ cursor: 'pointer', border: '1px solid #ddd' }}>WhatsApp</button>
           <button className="badge" onClick={() => setUrl('https://google.com')} style={{ cursor: 'pointer', border: '1px solid #ddd' }}>Google</button>
         </div>
       </div>
